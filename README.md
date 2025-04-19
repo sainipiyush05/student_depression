@@ -66,8 +66,10 @@ Clone this repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/student-depression-prediction.git
+git clone https://github.com/sainipiyush05/student_depression
+
 cd student-depression-prediction
+
 Install dependencies:
 
 bash
