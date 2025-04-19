@@ -98,25 +98,19 @@ git clone https://github.com/sainipiyush05/student_depression
 cd student-depression-prediction
 
 
-📈 Future Work
-Streamlit web app for real-time prediction
+## 📈 Future Work
 
-Feature importance analysis
+- Streamlit web app for real-time prediction  
+- Feature importance analysis  
+- Model explainability using SHAP/LIME  
+- Integrate feedback from real students/psychologists  
 
-Model explainability using SHAP/LIME
+## 👨‍💻 Author
 
-Integrate feedback from real students/psychologists
+**Piyush Saini**  
+B.Tech CSE | AI/ML Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/sainipiyush05) • [GitHub](https://github.com/sainipiyush05)  
 
-👨‍💻 Author
-Piyush Saini
-B.Tech CSE | AI/ML Enthusiast
-LinkedIn • GitHub
+## 📜 License
 
-📜 License
-This project is licensed under the MIT License.
-
-
-
----
-
-
+This project is licensed under the **MIT License**.
