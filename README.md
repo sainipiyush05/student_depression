@@ -1,5 +1,3 @@
-## Student Depression Classification
-
 # 🎓 Student Depression Prediction using Machine Learning
 
 This project uses machine learning models to predict whether a student is suffering from depression based on multiple personal, academic, and social factors.
@@ -8,21 +6,21 @@ This project uses machine learning models to predict whether a student is suffer
 
 The dataset used is `student_depression_dataset.csv`, which includes features such as:
 
-- Age
-- Gender
-- Profession
-- Academic Pressure
-- Work Pressure
-- CGPA
-- Study Satisfaction
-- Job Satisfaction
-- Sleep Duration
-- Dietary Habits
-- Degree
-- Suicidal Thoughts
-- Work/Study Hours
-- Financial Stress
-- Family History of Mental Illness
+- Age  
+- Gender  
+- Profession  
+- Academic Pressure  
+- Work Pressure  
+- CGPA  
+- Study Satisfaction  
+- Job Satisfaction  
+- Sleep Duration  
+- Dietary Habits  
+- Degree  
+- Suicidal Thoughts  
+- Work/Study Hours  
+- Financial Stress  
+- Family History of Mental Illness  
 
 The target column is `Depression` (0 = No, 1 = Yes).
 
@@ -37,46 +35,68 @@ The target column is `Depression` (0 = No, 1 = Yes).
 
 We trained and evaluated the following models:
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- Gradient Boosting
-- AdaBoost
+- Logistic Regression  
+- Decision Tree  
+- Random Forest  
+- Gradient Boosting  
+- AdaBoost  
 
 Each model was evaluated on:
-- Accuracy
-- Precision
-- Recall
-- F1-Score
+
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
 - ROC AUC Score
 
 ## 🔍 Hyperparameter Tuning
 
 Used `RandomizedSearchCV` for:
-- Random Forest
-- Support Vector Machine (SVC)
-- AdaBoost
+
+- Random Forest  
+- Support Vector Machine (SVC)  
+- AdaBoost  
 
 Best performing model: **Random Forest**
 
 ## 🚀 Model Prediction
-🛠️ Installation
+
+You can pass a sample student profile for prediction like this:
+
+```python
+sample_input_dict = {
+    'Gender': 1,
+    'Age': 21,
+    'Profession': 2,
+    'Academic Pressure': 1,
+    'Work Pressure': 2,
+    'CGPA': 8.2,
+    'Study Satisfaction': 1,
+    'Job Satisfaction': 0,
+    'Sleep Duration': 6,
+    'Dietary Habits': 1,
+    'Degree': 0,
+    'Have you ever had suicidal thoughts ?': 0,
+    'Work/Study Hours': 5,
+    'Financial Stress': 1,
+    'Family History of Mental Illness': 0
+}
+
+sample_input_df = pd.DataFrame([sample_input_dict])
+sample_input_df = sample_input_df[X.columns]
+sample_input_scaled = scaler.transform(sample_input_df)
+pred = final_model.predict(sample_input_scaled)
+print("🔮 Predicted Depression:", pred[0])
+
+
+## 🛠️ Installation
+
 Clone this repository:
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/sainipiyush05/student_depression
-
 cd student-depression-prediction
 
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run your training or prediction scripts.
 
 📈 Future Work
 Streamlit web app for real-time prediction
@@ -90,19 +110,13 @@ Integrate feedback from real students/psychologists
 👨‍💻 Author
 Piyush Saini
 B.Tech CSE | AI/ML Enthusiast
-LinkedIn | GitHub
+LinkedIn • GitHub
 
 📜 License
 This project is licensed under the MIT License.
 
-yaml
-Copy
-Edit
+
 
 ---
 
-Let me know if you'd like:
-- `requirements.txt`
-- A `Streamlit` version
-- A badge-style header (e.g. for accuracy, Python version, etc.)
-- To include visuals like confusion matrices or ROC curves in the README
+Let me know if you want to embed a **project banner**, **accuracy badge**, or **Streamlit demo link** at the top.
