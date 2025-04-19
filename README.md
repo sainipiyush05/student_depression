@@ -63,7 +63,7 @@ Best performing model: **Random Forest**
 
 You can pass a sample student profile for prediction like this:
 
-```python
+
 sample_input_dict = {
     'Gender': 1,
     'Age': 21,
