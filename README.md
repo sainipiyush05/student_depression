@@ -63,7 +63,7 @@ Best performing model: **Random Forest**
 
 You can pass a sample student profile for prediction like this:
 
-
+```python
 sample_input_dict = {
     'Gender': 1,
     'Age': 21,
@@ -81,6 +81,7 @@ sample_input_dict = {
     'Financial Stress': 1,
     'Family History of Mental Illness': 0
 }
+
 
 sample_input_df = pd.DataFrame([sample_input_dict])
 sample_input_df = sample_input_df[X.columns]
